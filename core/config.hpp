@@ -7,7 +7,6 @@ namespace vivisect::config {
 
 // Forward declarations for module types
 namespace modules {
-    enum class DispatchStrategy;
     enum class DebuggerResponse;
 }
 
