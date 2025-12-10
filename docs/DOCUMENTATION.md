@@ -1841,34 +1841,9 @@ Apply minimal protection to hot paths identified by profiler.
 
 ---
 
-## Migration from Other Obfuscators
+## Comparison with Commercial Tools
 
-### From Obfusk8
-
-Vivisection Engine is the successor to Obfusk8 with improved architecture.
-
-**Macro Mapping:**
-
-```cpp
-// Obfusk8 → Vivisection Engine
-_main                    → VIVISECT_MAIN
-OBFUSCATE_STRING         → VIVISECT_STR
-STEALTH_API_OBFSTR       → VIVISECT_API
-OBF_MBA_ADD              → VIVISECT_MBA_ADD
-OBF_MBA_XOR              → VIVISECT_MBA_XOR
-```
-
-**API Wrapper Migration:**
-
-```cpp
-// Obfusk8
-k8_ProcessManipulationAPIs proc;
-
-// Vivisection Engine
-vivisect::api::ProcessAPI proc;
-```
-
-### From VMProtect/Themida
+### VMProtect/Themida
 
 Vivisection Engine provides similar protection but as source-level obfuscation.
 
